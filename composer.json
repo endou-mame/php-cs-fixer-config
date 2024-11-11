@@ -8,6 +8,11 @@
             "WizDevelop\\PhpCsFixerConfig\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "WizDevelop\\PhpCsFixerConfig\\Tests\\": "tests"
+        }
+    },
     "authors": [
         {
             "name": "Shigenao Kakiuchi",
@@ -18,6 +23,11 @@
     "require": {
         "php": "^8.3",
         "friendsofphp/php-cs-fixer": "^3.54"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.12",
+        "phpunit/php-code-coverage": "^11.0",
+        "phpunit/phpunit": "^11.3"
     },
     "config": {
         "sort-packages": true
