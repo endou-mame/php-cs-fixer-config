@@ -1,4 +1,5 @@
-name: PHPStan
+name: PHPStan and PHPUnit
+
 on:
   push:
     branches:
@@ -9,34 +10,40 @@ on:
       - opened
       - synchronize
       - reopened
+
 jobs:
-  phpunit:
-    name: PHPStan (PHP ${{ matrix.php-versions }} on ${{ matrix.operating-system }})
-    runs-on: ${{ matrix.operating-system }}
+  phpstan:
+    runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
       matrix:
-        operating-system: [ ubuntu-latest ]
-        php-versions: [ '8.3' ]
+        php-versions: [8.3]
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: ${{ matrix.php-versions }}
           extensions: mbstring, dom, fileinfo, simplexml
           coverage: xdebug
+
       - name: Get composer cache directory
         id: composer-cache
         run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
       - name: Cache composer dependencies
         uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
+
       - name: Install Composer dependencies
         run: composer install --no-progress --prefer-dist --optimize-autoloader
+
       - name: Check with PHPStan
         run: vendor/bin/phpstan --configuration=phpstan.neon.dist
+
+      - name: Run PHPUnit tests
+        run: vendor/bin/phpunit --configuration=phpunit.xml.dist
