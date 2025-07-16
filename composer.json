@@ -22,7 +22,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "^8.3",
-        "friendsofphp/php-cs-fixer": "^3.54"
+        "friendsofphp/php-cs-fixer": "^3.84"
     },
     "require-dev": {
         "phpstan/phpstan": "^1.12",
