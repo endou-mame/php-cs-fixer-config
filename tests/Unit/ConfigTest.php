@@ -33,7 +33,7 @@ final class ConfigTest extends TestCase
         $expectedRules = [
             '@Symfony' => true,
             '@PhpCsFixer' => true,
-            '@PHP83Migration' => true,
+            '@PHP84Migration' => true,
             '@PSR12' => true,
             'nullable_type_declaration_for_default_null_value' => true,
             'ordered_types' => ['null_adjustment' => 'always_last', 'sort_algorithm' => 'none'],
