@@ -1,0 +1,13 @@
+#!/bin/bash
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PHP_FIXER_FIXER_PATH="$SCRIPT_DIR/vendor/bin/php-cs-fixer"
+
+# HACK: miseでインストールしたPHPが反映されない問題（shims）の回避策として、mise経由で実行する
+if command -v mise &> /dev/null; then
+    echo "Executing command is via mise."
+    exec mise exec -- php "$PHP_FIXER_FIXER_PATH" "$@"
+else
+    echo "Executing command directly."
+    exec php "$PHP_FIXER_FIXER_PATH" "$@"
+fi
