@@ -1,6 +1,6 @@
 # 🛠 wiz-develop/php-cs-fixer-config
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/wiz-develop/php-cs-fixer-config/phpstan_and_phpunit.yml)
+![CI](https://github.com/wiz-develop/php-cs-fixer-config/actions/workflows/phpstan_and_phpunit.yml/badge.svg)
 ![Packagist Version](https://img.shields.io/packagist/v/wiz-develop/php-cs-fixer-config)
 ![Packagist Downloads](https://img.shields.io/packagist/dt/wiz-develop/php-cs-fixer-config)
 [![License](https://img.shields.io/github/license/wiz-develop/php-cs-fixer-config.svg?style=flat-square)](https://github.com/wiz-develop/php-cs-fixer-config/blob/main/LICENSE)
