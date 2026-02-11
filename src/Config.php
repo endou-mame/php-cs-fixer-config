@@ -98,6 +98,7 @@ final class Config extends \PhpCsFixer\Config
             'binary_operator_spaces' => [
                 'default' => 'at_least_single_space',
                 'operators' => [
+                    '=>' => 'single_space',
                     '=' => 'single_space',
                 ],
             ],
