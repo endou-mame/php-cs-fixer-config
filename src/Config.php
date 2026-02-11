@@ -17,7 +17,7 @@ final class Config extends \PhpCsFixer\Config
             // Standard presets (High to low priority)
             '@Symfony' => true,
             '@PhpCsFixer' => true,
-            '@PHP84Migration' => true,
+            '@PHP8x5Migration' => true,
             '@PSR12' => true,
             // https://cs.symfony.com/doc/rules/function_notation/nullable_type_declaration_for_default_null_value.html
             'nullable_type_declaration_for_default_null_value' => true,
@@ -142,8 +142,8 @@ final class Config extends \PhpCsFixer\Config
             // Standard presets (High to low priority)
             '@Symfony:risky' => true,
             '@PhpCsFixer:risky' => true,
-            '@PHP80Migration:risky' => true,
-            '@PHPUnit84Migration:risky' => true,
+            '@PHP8x5Migration:risky' => true,
+            '@PHPUnit11x0Migration:risky' => true,
             // https://cs.symfony.com/doc/rules/class_usage/date_time_immutable.html
             'date_time_immutable' => true,
             // https://cs.symfony.com/doc/rules/alias/mb_str_functions.html
