@@ -33,7 +33,7 @@ final class ConfigTest extends TestCase
         $expectedRules = [
             '@Symfony' => true,
             '@PhpCsFixer' => true,
-            '@PHP84Migration' => true,
+            '@PHP8x5Migration' => true,
             '@PSR12' => true,
             'nullable_type_declaration_for_default_null_value' => true,
             'ordered_types' => ['null_adjustment' => 'always_last', 'sort_algorithm' => 'none'],
@@ -117,8 +117,8 @@ final class ConfigTest extends TestCase
         $expectedRiskyRules = [
             '@Symfony:risky' => true,
             '@PhpCsFixer:risky' => true,
-            '@PHP80Migration:risky' => true,
-            '@PHPUnit84Migration:risky' => true,
+            '@PHP8x5Migration:risky' => true,
+            '@PHPUnit11x0Migration:risky' => true,
             'date_time_immutable' => true,
             'mb_str_functions' => true,
             'final_internal_class' => false,
