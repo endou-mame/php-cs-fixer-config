@@ -1,11 +1,11 @@
-# 🛠 wiz-develop/php-cs-fixer-config
+# 🛠 endou-mame/php-cs-fixer-config
 
-![CI](https://github.com/wiz-develop/php-cs-fixer-config/actions/workflows/phpstan_and_phpunit.yml/badge.svg)
-![Packagist Version](https://img.shields.io/packagist/v/wiz-develop/php-cs-fixer-config)
-![Packagist Downloads](https://img.shields.io/packagist/dt/wiz-develop/php-cs-fixer-config)
-[![License](https://img.shields.io/github/license/wiz-develop/php-cs-fixer-config.svg?style=flat-square)](https://github.com/wiz-develop/php-cs-fixer-config/blob/main/LICENSE)
+![CI](https://github.com/endou-mame/php-cs-fixer-config/actions/workflows/phpstan_and_phpunit.yml/badge.svg)
+![Packagist Version](https://img.shields.io/packagist/v/endou-mame/php-cs-fixer-config)
+![Packagist Downloads](https://img.shields.io/packagist/dt/endou-mame/php-cs-fixer-config)
+[![License](https://img.shields.io/github/license/endou-mame/php-cs-fixer-config.svg?style=flat-square)](https://github.com/endou-mame/php-cs-fixer-config/blob/main/LICENSE)
 
-wiz-develop 用 php-cs-fixer 設定
+endou-mame 用 php-cs-fixer 設定
 
 ## ✨ Features
 - **Strict**: コードベースを厳格に保護します。
@@ -13,7 +13,7 @@ wiz-develop 用 php-cs-fixer 設定
 
 ## 📦 Installation
 ```shell
-composer require --dev wiz-develop/php-cs-fixer-config
+composer require --dev endou-mame/php-cs-fixer-config
 ```
 
 設定を有効にするためには `.php-cs-fixer.php` をプロジェクトに追加してください。
@@ -24,7 +24,7 @@ composer require --dev wiz-develop/php-cs-fixer-config
 declare(strict_types=1);
 
 use PhpCsFixer\Finder;
-use WizDevelop\PhpCsFixerConfig\Config;
+use EndouMame\PhpCsFixerConfig\Config;
 
 return (new Config())
     ->setFinder(

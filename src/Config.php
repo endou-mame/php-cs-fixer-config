@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WizDevelop\PhpCsFixerConfig;
+namespace EndouMame\PhpCsFixerConfig;
 
 final class Config extends \PhpCsFixer\Config
 {

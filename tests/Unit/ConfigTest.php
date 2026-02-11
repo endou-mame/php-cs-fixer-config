@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace WizDevelop\PhpCsFixerConfig\Tests\Unit;
+namespace EndouMame\PhpCsFixerConfig\Tests\Unit;
 
 use PhpCsFixer\ConfigInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\Attributes\TestDox;
 use PHPUnit\Framework\TestCase;
-use WizDevelop\PhpCsFixerConfig\Config;
+use EndouMame\PhpCsFixerConfig\Config;
 
 #[TestDox('Unit test for Config class')]
 #[CoversClass(Config::class)]

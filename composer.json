@@ -1,16 +1,16 @@
 {
-    "name": "wiz-develop/php-cs-fixer-config",
-    "description": "🛠 php-cs-fixer configuration for wiz-develop.",
+    "name": "endou-mame/php-cs-fixer-config",
+    "description": "🛠 php-cs-fixer configuration for endou-mame.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "WizDevelop\\PhpCsFixerConfig\\": "src/"
+            "EndouMame\\PhpCsFixerConfig\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WizDevelop\\PhpCsFixerConfig\\Tests\\": "tests"
+            "EndouMame\\PhpCsFixerConfig\\Tests\\": "tests"
         }
     },
     "authors": [
