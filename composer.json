@@ -1,6 +1,6 @@
 {
-    "name": "endou-mame/php-cs-fixer-config",
-    "description": "🛠 php-cs-fixer configuration for endou-mame.",
+    "name": "endoumame/php-cs-fixer-config",
+    "description": "🛠 php-cs-fixer configuration for endoumame.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -16,7 +16,7 @@
     "authors": [
         {
             "name": "Kakiuchi Shigenao",
-            "email": "87973394+endou-mame@users.noreply.github.com"
+            "email": "87973394+endoumame@users.noreply.github.com"
         }
     ],
     "minimum-stability": "stable",
